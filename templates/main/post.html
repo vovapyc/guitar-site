@@ -1,0 +1,71 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="text-center post-details main">
+        <div class="container">
+            <div class="text-center">
+                <h1>Lorem Ipsum</h1>
+                <span class="publishDate text-uppercase"><i class="fas fa-clock"></i> Вчора</span>
+                <span class="badge badge-info">Начання</span>
+                <span class="badge badge-info">Гітари</span>
+                <div>
+                    <img src="https://wallpapercave.com/wp/bBWSsFB.jpg" class="img-fluid rounded mt-4 mb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article post">
+        <div class="container text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet risus a massa imperdiet tincidunt vel
+            ut lorem. Duis sed venenatis purus. Vestibulum sed egestas est, at suscipit magna. Aliquam efficitur ac erat
+            in dictum. Curabitur laoreet, ex venenatis bibendum aliquam, quam urna pulvinar dolor, non lacinia elit
+            metus ut massa. Vivamus finibus ut tortor et sagittis. Nullam pulvinar iaculis vehicula. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit.
+
+            Nulla erat arcu, volutpat vel feugiat et, luctus eget magna. Suspendisse tristique vulputate mauris, ut
+            aliquam nunc. Donec lorem sapien, consequat non accumsan et, ultrices et tellus. Ut aliquet urna nec
+            lobortis convallis. Vestibulum eu fermentum nulla. Sed a eros enim. Integer eget augue eget nibh egestas
+            tincidunt a sit amet nisi. Sed lobortis ullamcorper convallis. Donec tempus turpis elementum magna accumsan,
+            ac maximus odio viverra. Nullam pellentesque felis magna, at consectetur velit ullamcorper quis. Vivamus
+            dolor felis, vehicula quis elementum ut, mattis quis metus. Morbi lacus risus, pellentesque id viverra non,
+            vestibulum tincidunt mauris. Vestibulum varius nibh ac erat pretium eleifend. Integer vulputate aliquam
+            tincidunt. Pellentesque porta eros vitae euismod varius. Nulla eget tortor tortor.
+
+            Pellentesque posuere ligula neque, in semper nulla feugiat et. Pellentesque sed leo non risus faucibus
+            accumsan ac sit amet mauris. Sed venenatis neque vitae felis hendrerit efficitur. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Proin pharetra venenatis nulla eu maximus. Vivamus facilisis dictum
+            nulla, ultricies interdum est tempor a. Integer nisl magna, interdum at massa sit amet, tincidunt rhoncus
+            risus. Vivamus sit amet ipsum id risus ultricies mollis eu a risus. Ut ligula elit, mollis sed risus vitae,
+            egestas gravida nunc. Nunc convallis, lectus sed egestas gravida, quam tortor pulvinar metus, eu convallis
+            dui nisi ac tortor. Phasellus fermentum et sem ac ornare. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Curabitur imperdiet quis odio ut mattis. Morbi cursus nibh ac
+            vehicula placerat.
+
+            Ut euismod, dui tempor sagittis vulputate, metus leo aliquam metus, ut volutpat dolor augue aliquam sem.
+            Quisque maximus scelerisque laoreet. Quisque turpis tortor, ultrices sed dui et, viverra venenatis ex.
+            Praesent dictum neque a dignissim viverra. Morbi tincidunt sapien et leo pharetra euismod. Sed eu nunc sed
+            tellus ultrices rutrum id porttitor sapien. Nam vel scelerisque tellus. In hac habitasse platea dictumst.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos.
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '{{request.build_absolute_uri}}';
+                    this.page.identifier = '{{post.id}}';
+                    this.page.title = '{{post.title}}';
+                };
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://autocarpl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>"Буль-ласка ввімкніть javascript у Вашому браузері, щоб мати можливість дивитись і пубілкувати
+                коментарі"
+            </noscript>
+        </div>
+    </div>
+{% endblock %}
