@@ -1,0 +1,14 @@
+<div class="container main mb-5">
+  <div class="row mb-5">
+    <div class="col-lg-7">
+      <p [innerHTML]="studentVideo.iframe | sanitizeHtml"></p>
+    </div>
+    <div class="col-lg-5 video-info">
+      <h1>{{studentVideo.title}}</h1>
+      <div>{{studentVideo.description}}</div>
+    </div>
+  </div>
+
+</div>
+
+<script id="dsq-count-scr" src="//guitarsite.disqus.com/count.js" async></script>

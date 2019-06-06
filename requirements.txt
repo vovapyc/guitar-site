@@ -1,4 +1,0 @@
-django
-django-ckeditor
-pillow
-djangorestframework
