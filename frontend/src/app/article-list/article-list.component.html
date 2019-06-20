@@ -7,7 +7,6 @@
       <div class="col-xl-8 col-lg-6 text">
         <a [routerLink]="['/article/', article.pk]"><h4>{{article.title}}</h4></a>
         <span class="publishDate">{{article.date_str}}</span>
-        <span class="badge badge-info">{{article.tags_str}}</span>
         <p>
           {{article.text_preview}}
         </p>

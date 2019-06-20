@@ -11,7 +11,7 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Post
-        fields = ('pk', 'title', 'image', 'text', 'text_preview', 'date', 'date_str', 'tags_str')
+        fields = ('pk', 'title', 'image', 'text', 'text_preview', 'date', 'date_str',)
 
 
 class StudentVideoSerializer(serializers.HyperlinkedModelSerializer):
