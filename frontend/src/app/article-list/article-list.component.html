@@ -1,9 +1,6 @@
 <div class="articles light main">
   <div class="container">
     <div class="row article" *ngFor="let article of articles">
-      <div class="col-xl-4 col-lg-6 mb-4">
-        <a [routerLink]="['/article/', article.pk]"><img src="{{article.image}}"></a>
-      </div>
       <div class="col-xl-8 col-lg-6 text">
         <a [routerLink]="['/article/', article.pk]"><h4>{{article.title}}</h4></a>
         <span class="publishDate">{{article.date_str}}</span>

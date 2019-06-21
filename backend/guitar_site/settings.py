@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'ckeditor',
     'corsheaders',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
