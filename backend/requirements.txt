@@ -3,3 +3,4 @@ django-ckeditor
 pillow
 djangorestframework
 django-cors-headers
+gunicorn
